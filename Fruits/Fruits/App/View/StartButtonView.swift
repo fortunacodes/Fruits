@@ -1,4 +1,4 @@
-//
+ //
 //  StartButtonView.swift
 //  Fruits
 //
@@ -15,9 +15,21 @@ struct StartButtonView: View {
         Button {
             print("Exit the onboarding")
         } label: {
-            Text("Start")
-        }
-
+            HStack (spacing: 8){
+                Text("Start")
+                
+                Image(systemName: "arrow.right.circle")
+                    .imageScale(.large)
+                
+            }//: HSTACK
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(
+                Capsule().strokeBorder(Color.white, lineWidth: 1.25)
+            )
+            
+        } //: BUTTON
+        .accentColor(Color.white)
     }
 }
 
