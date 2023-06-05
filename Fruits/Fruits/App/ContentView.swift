@@ -39,6 +39,7 @@ struct ContentView: View {
                 }//: HSTACK
             }//: TOOLBAR
         }//: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

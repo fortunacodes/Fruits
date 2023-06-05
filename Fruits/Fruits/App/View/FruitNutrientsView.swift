@@ -33,7 +33,6 @@ struct FruitNutrientsView: View {
                         Text(fruit.nutrition[item])
                             .multilineTextAlignment(.trailing)
                     }//: HSTACK
-                    
                 }//: LOOP
             }//: DISCLOSURE
         }//: BOX
@@ -43,6 +42,7 @@ struct FruitNutrientsView: View {
 struct FruitNutrientsView_Previews: PreviewProvider {
     static var previews: some View {
         FruitNutrientsView(fruit: fruitsData[0])
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
             .preferredColorScheme(.dark)
             .previewLayout(.fixed(width: 375, height: 480))
             .padding()
